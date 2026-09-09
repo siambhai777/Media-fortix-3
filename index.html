@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Fortix — সোশ্যাল মিডিয়া সিকিউরিটি, ডিজিটাল গ্রোথ ও টেকনোলজি নিউজ</title>
+<meta name="description" content="Media Fortix সোশ্যাল মিডিয়া অ্যাকাউন্ট সুরক্ষিত রাখে, হ্যাক হওয়া অ্যাকাউন্ট ফিরিয়ে আনে, ডিজিটাল ব্র্যান্ড বড় করে এবং প্রতিদিন প্রযুক্তি, এআই ও সাইবার সিকিউরিটির খবর প্রকাশ করে।">
+<meta name="keywords" content="সোশ্যাল মিডিয়া সিকিউরিটি, অ্যাকাউন্ট রিকভারি, ব্লু ভেরিফিকেশন, সোশ্যাল মিডিয়া ম্যানেজমেন্ট, ডিজিটাল গ্রোথ, টেক নিউজ, সাইবার সিকিউরিটি সচেতনতা, এআই নিউজ">
+<meta name="author" content="Media Fortix">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mediafortix.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Media Fortix — সোশ্যাল মিডিয়া সিকিউরিটি, ডিজিটাল গ্রোথ ও টেকনোলজি নিউজ">
+<meta property="og:description" content="অ্যাকাউন্ট সুরক্ষা। ব্র্যান্ড গ্রোথ। গুরুত্বপূর্ণ প্রযুক্তির খবর।">
+<meta property="og:url" content="https://mediafortix.com/">
+<meta property="og:site_name" content="Media Fortix">
+<meta property="og:image" content="https://mediafortix.com/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Media Fortix — সোশ্যাল মিডিয়া সিকিউরিটি, ডিজিটাল গ্রোথ ও টেকনোলজি নিউজ">
+<meta name="twitter:description" content="অ্যাকাউন্ট সুরক্ষা। ব্র্যান্ড গ্রোথ। গুরুত্বপূর্ণ প্রযুক্তির খবর।">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%232FB6E0' d='M50 4 90 20v28c0 30-18 42-40 48C28 90 10 78 10 48V20Z'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Baloo+Da+2:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Media Fortix",
+  "url": "https://mediafortix.com",
+  "sameAs": ["https://www.facebook.com/share/1GUEopKuDc/"],
+  "description": "সোশ্যাল মিডিয়া সিকিউরিটি, অ্যাকাউন্ট রিকভারি, ডিজিটাল গ্রোথ এবং টেকনোলজি নিউজ।",
+  "areaServed": "Worldwide"
+}
+</script>
+
+<style>
+:root{
+  --bg:#0A1424;
+  --surface:#101C33;
+  --surface-2:#15233F;
+  --border:rgba(255,255,255,0.09);
+  --text:#E9EEF6;
+  --text-dim:#93A0B8;
+  --accent:#2FB6E0;
+  --accent-ink:#0D2B3B;
+  --accent-2:#3E5FA0;
+  --warn:#E14B4B;
+  --shadow: 0 20px 50px -20px rgba(0,0,0,0.6);
+  --radius-s:10px;
+  --radius-m:16px;
+  --radius-l:26px;
+  --maxw:1220px;
+  color-scheme: dark;
+}
+html[data-theme="light"]{
+  --bg:#F4F7FB;
+  --surface:#FFFFFF;
+  --surface-2:#EDF1F8;
+  --border:rgba(16,28,51,0.09);
+  --text:#0F1B30;
+  --text-dim:#57647F;
+  --accent:#1291BD;
+  --accent-ink:#E3F4FA;
+  --accent-2:#294C86;
+  --warn:#C93A3A;
+  --shadow: 0 20px 44px -22px rgba(16,24,40,0.18);
+  color-scheme: light;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Hind Siliguri','Inter',-apple-system,sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  transition:background .35s ease,color .35s ease;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{
+  font-family:'Baloo Da 2','Hind Siliguri',sans-serif;
+  line-height:1.25;
+  margin:0 0 .5em;
+  font-weight:600;
+  letter-spacing:0;
+}
+p{margin:0 0 1em;color:var(--text-dim);}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;}
+ul{margin:0;padding:0;list-style:none;}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.kicker{
+  display:flex;align-items:center;gap:10px;
+  color:var(--accent);font-weight:600;font-size:0.95rem;margin-bottom:14px;
+}
+.kicker::before{content:"";width:22px;height:2px;background:var(--accent);display:inline-block;border-radius:2px;}
+section{padding:100px 0;position:relative;}
+.section-head{max-width:640px;margin-bottom:56px;}
+.section-head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);}
+.section-head p{font-size:1.05rem;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+}
+
+/* ---------- NAV ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  backdrop-filter:blur(14px) saturate(140%);
+  background:color-mix(in srgb, var(--bg) 72%, transparent);
+  border-bottom:1px solid var(--border);
+  transition:background .35s ease;
+}
+.nav{
+  max-width:var(--maxw);margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Baloo Da 2',sans-serif;font-weight:700;font-size:1.2rem;}
+.logo svg{width:36px;height:36px;flex:none;}
+.nav-links{display:flex;gap:6px;align-items:center;}
+.nav-links a{
+  padding:9px 16px;border-radius:999px;font-weight:500;font-size:0.96rem;color:var(--text-dim);
+  transition:color .2s ease, background .2s ease;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface-2);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.icon-btn{
+  width:40px;height:40px;border-radius:50%;border:1px solid var(--border);
+  background:var(--surface);color:var(--text);display:flex;align-items:center;justify-content:center;
+  transition:transform .2s ease, border-color .2s ease;
+}
+.icon-btn:hover{border-color:var(--accent);transform:translateY(-2px);}
+.hamburger{display:none;flex-direction:column;gap:5px;width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--surface);align-items:center;justify-content:center;}
+.hamburger span{width:18px;height:2px;background:var(--text);border-radius:2px;transition:.25s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media (max-width:860px){
+  .nav-links{
+    position:fixed;top:72px;left:16px;right:16px;
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-m);
+    flex-direction:column;padding:10px;gap:2px;box-shadow:var(--shadow);
+    transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s ease;
+  }
+  .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .nav-links a{width:100%;padding:12px 16px;}
+  .hamburger{display:flex;}
+}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 24px;border-radius:999px;font-weight:600;font-size:0.95rem;
+  border:1px solid transparent;transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn-primary{background:var(--accent);color:#04202B;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px color-mix(in srgb, var(--accent) 60%, transparent);}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text);}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+.btn-sm{padding:9px 16px;font-size:0.85rem;}
+
+/* ---------- HERO ---------- */
+.hero{
+  padding:160px 0 100px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:-20% -10% auto -10%;height:600px;
+  background:radial-gradient(60% 60% at 30% 20%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 70%);
+  pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;}
+.hero h1{font-size:clamp(2.1rem,4.2vw,3.2rem);}
+.hero h1 .accent{color:var(--accent);}
+.hero p.lead{font-size:1.12rem;max-width:520px;}
+.hero-ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+.hero-stats{display:flex;gap:32px;margin-top:52px;flex-wrap:wrap;}
+.hero-stats div strong{display:block;font-family:'Baloo Da 2',sans-serif;font-size:1.6rem;}
+.hero-stats div span{color:var(--text-dim);font-size:0.88rem;}
+.hero-art{position:relative;aspect-ratio:1/1;}
+.hero-art svg{width:100%;height:100%;}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-art{max-width:340px;margin:0 auto;order:-1;}
+}
+
+/* ---------- SERVICES ---------- */
+.services-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;
+}
+.service-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-m);
+  padding:28px 26px;position:relative;overflow:hidden;
+  transition:transform .3s ease, border-color .3s ease;
+}
+.service-card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2));
+  transform:scaleY(0);transform-origin:top;transition:transform .3s ease;
+}
+.service-card:hover{transform:translateY(-6px);border-color:color-mix(in srgb, var(--accent) 40%, var(--border));}
+.service-card:hover::before{transform:scaleY(1);}
+.service-icon{
+  width:52px;height:52px;border-radius:14px;background:var(--accent-ink);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:18px;
+}
+.service-card h3{font-size:1.1rem;margin-bottom:8px;}
+.service-card p{font-size:0.94rem;margin-bottom:18px;min-height:70px;}
+.learn-more{
+  background:none;border:none;color:var(--accent);font-weight:600;font-size:0.9rem;
+  display:inline-flex;align-items:center;gap:6px;padding:0;
+}
+.learn-more i{transition:transform .2s ease;}
+.learn-more:hover i{transform:translateX(-3px);}
+
+/* ---------- WHY CHOOSE US ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.why-item{padding:26px;border-radius:var(--radius-m);background:var(--surface-2);text-align:right;}
+.why-item i{font-size:1.4rem;color:var(--accent);margin-bottom:14px;display:block;}
+.why-item h4{font-size:1.02rem;margin-bottom:6px;}
+.why-item p{font-size:0.9rem;margin:0;}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+.about-cards{display:grid;gap:16px;}
+.about-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-m);padding:22px 24px;}
+.about-card h4{font-size:1rem;margin-bottom:6px;color:var(--accent);}
+.about-card p{margin:0;font-size:0.92rem;}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;}}
+
+/* ---------- TECH NEWS ---------- */
+.news-section{background:var(--surface-2);}
+.breaking-bar{
+  background:var(--warn);color:#fff;overflow:hidden;white-space:nowrap;
+  border-radius:999px;display:flex;align-items:center;margin-bottom:44px;
+}
+.breaking-tag{
+  background:rgba(0,0,0,0.18);padding:10px 20px;font-weight:700;font-size:0.82rem;flex:none;
+  display:flex;align-items:center;gap:8px;
+}
+.breaking-track{display:flex;overflow:hidden;flex:1;}
+.breaking-track ul{display:flex;gap:60px;padding:10px 24px;animation:marquee 26s linear infinite;flex:none;}
+.breaking-track:hover ul{animation-play-state:paused;}
+.breaking-track li{font-size:0.88rem;font-weight:500;white-space:nowrap;}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+.slider{position:relative;border-radius:var(--radius-l);overflow:hidden;margin-bottom:60px;box-shadow:var(--shadow);}
+.slide{
+  display:none;grid-template-columns:1.1fr 1fr;min-height:340px;
+}
+.slide.active{display:grid;}
+.slide-media{
+  position:relative;display:flex;align-items:center;justify-content:center;color:#fff;
+}
+.slide-media i{font-size:4.5rem;opacity:0.9;}
+.slide-copy{padding:44px;display:flex;flex-direction:column;justify-content:center;background:var(--surface);}
+.tag{
+  display:inline-flex;align-items:center;padding:5px 14px;border-radius:999px;font-size:0.75rem;font-weight:700;
+  background:var(--accent-ink);color:var(--accent);width:max-content;margin-bottom:14px;
+}
+.slide-copy h3{font-size:1.4rem;margin-bottom:10px;}
+.slide-date{color:var(--text-dim);font-size:0.82rem;margin-top:6px;}
+.slider-controls{position:absolute;bottom:20px;right:44px;display:flex;gap:8px;}
+.slider-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,0.4);border:none;padding:0;}
+.slider-dot.active{background:#fff;width:22px;border-radius:5px;}
+.slider-arrows{position:absolute;bottom:20px;left:20px;display:flex;gap:8px;z-index:2;}
+.slider-arrows button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,0.4);background:rgba(0,0,0,0.25);color:#fff;}
+@media(max-width:760px){.slide{grid-template-columns:1fr;}.slide-media{min-height:180px;}}
+
+.news-toolbar{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:26px;}
+.search-box{
+  position:relative;flex:1;min-width:220px;max-width:360px;
+}
+.search-box input{
+  width:100%;padding:12px 42px 12px 16px;border-radius:999px;border:1px solid var(--border);
+  background:var(--surface);color:var(--text);font-size:0.92rem;font-family:inherit;
+}
+.search-box i{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--text-dim);}
+.filters{display:flex;gap:8px;flex-wrap:wrap;}
+.filter-btn{
+  padding:8px 16px;border-radius:999px;border:1px solid var(--border);background:var(--surface);
+  color:var(--text-dim);font-size:0.83rem;font-weight:500;transition:.2s;font-family:inherit;
+}
+.filter-btn.active,.filter-btn:hover{background:var(--accent);color:#04202B;border-color:var(--accent);}
+
+.news-layout{display:grid;grid-template-columns:2.1fr 1fr;gap:32px;align-items:start;}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;}
+.news-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-m);overflow:hidden;
+  transition:transform .3s ease,border-color .3s ease;display:flex;flex-direction:column;
+}
+.news-card:hover{transform:translateY(-5px);border-color:color-mix(in srgb, var(--accent) 40%, var(--border));}
+.news-thumb{
+  height:130px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;position:relative;
+}
+.news-thumb .tag{position:absolute;top:12px;right:12px;margin:0;}
+.news-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1;}
+.news-body h4{font-size:1rem;margin-bottom:8px;}
+.news-body p{font-size:0.88rem;flex:1;}
+.news-meta{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+.news-meta span{font-size:0.78rem;color:var(--text-dim);}
+.read-more{background:none;border:none;color:var(--accent);font-weight:600;font-size:0.85rem;padding:0;font-family:inherit;}
+.no-results{display:none;padding:40px;text-align:center;color:var(--text-dim);}
+
+.sidebar-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-m);padding:24px;}
+.sidebar-card h4{font-size:1.02rem;margin-bottom:18px;}
+.trend-item{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border);}
+.trend-item:last-child{border-bottom:none;padding-bottom:0;}
+.trend-rank{font-family:'Baloo Da 2',sans-serif;font-weight:700;font-size:1.2rem;color:var(--accent);flex:none;width:26px;}
+.trend-item h5{font-size:0.9rem;margin:0 0 4px;}
+.trend-item span{font-size:0.76rem;color:var(--text-dim);}
+@media(max-width:960px){.news-layout{grid-template-columns:1fr;}}
+
+/* colored thumbnail variants */
+.tc-ai{background:linear-gradient(140deg,#3E5FA0,#2FB6E0);}
+.tc-cyber{background:linear-gradient(140deg,#E14B4B,#3E5FA0);}
+.tc-social{background:linear-gradient(140deg,#2FB6E0,#1D3E72);}
+.tc-tech{background:linear-gradient(140deg,#7C6EFF,#2FB6E0);}
+.tc-gadget{background:linear-gradient(140deg,#FFB020,#E14B4B);}
+.tc-marketing{background:linear-gradient(140deg,#2FB6E0,#3E5FA0);}
+.tc-safety{background:linear-gradient(140deg,#E14B4B,#FFB020);}
+.tc-tips{background:linear-gradient(140deg,#3E5FA0,#7C6EFF);}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;}
+.contact-info{display:grid;gap:16px;align-content:start;}
+.contact-row{
+  display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-m);padding:18px 20px;
+}
+.contact-row i{width:44px;height:44px;border-radius:12px;background:var(--accent-ink);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex:none;}
+.contact-row h5{margin:0 0 2px;font-size:0.92rem;}
+.contact-row p{margin:0;font-size:0.86rem;}
+.contact-row a{color:var(--text);}
+form.contact-form{display:grid;gap:14px;}
+.contact-form input,.contact-form textarea{
+  width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);font-family:inherit;font-size:0.92rem;resize:vertical;
+}
+.contact-form textarea{min-height:120px;}
+.form-note{font-size:0.82rem;color:var(--accent);display:none;margin-top:4px;}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr;}}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--surface);border-top:1px solid var(--border);padding:70px 0 26px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;margin-bottom:50px;}
+.footer-grid h5{font-size:0.95rem;margin-bottom:16px;}
+.footer-grid li{margin-bottom:10px;}
+.footer-grid a{color:var(--text-dim);font-size:0.9rem;transition:color .2s;}
+.footer-grid a:hover{color:var(--accent);}
+.footer-brand p{max-width:280px;font-size:0.88rem;}
+.footer-social{display:flex;gap:10px;margin-top:16px;}
+.footer-bottom{
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;border-top:1px solid var(--border);
+  font-size:0.82rem;color:var(--text-dim);
+}
+.footer-bottom a{color:var(--text-dim);}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr 1fr;}}
+
+/* ---------- MODAL ---------- */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(4,8,16,0.6);backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;z-index:2000;padding:20px;
+}
+.modal-overlay.open{display:flex;}
+.modal{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-l);
+  max-width:520px;width:100%;padding:36px;position:relative;box-shadow:var(--shadow);
+  max-height:85vh;overflow-y:auto;
+}
+.modal-close{position:absolute;top:18px;left:18px;background:var(--surface-2);border:none;width:34px;height:34px;border-radius:50%;color:var(--text);}
+.modal .modal-icon{width:56px;height:56px;border-radius:14px;background:var(--accent-ink);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:18px;}
+
+/* ---------- SCROLL TOP ---------- */
+.scroll-top{
+  position:fixed;bottom:28px;left:28px;width:46px;height:46px;border-radius:50%;
+  background:var(--accent);color:#04202B;border:none;display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:.3s ease;z-index:900;
+}
+.scroll-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+
+.whatsapp-float{
+  position:fixed;bottom:28px;right:28px;width:52px;height:52px;border-radius:50%;background:#25D366;
+  color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:var(--shadow);z-index:900;
+}
+
+::selection{background:var(--accent);color:#04202B;}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#home" class="logo">
+      <svg viewBox="0 0 100 116" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="navyG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#294C86"/><stop offset="1" stop-color="#16264A"/>
+          </linearGradient>
+        </defs>
+        <path d="M50 3 92 18V54C92 84 74 100 50 112 26 100 8 84 8 54V18Z" fill="url(#navyG)"/>
+        <path d="M50 3V112C74 100 92 84 92 54V18Z" fill="#AEB6C2"/>
+        <circle cx="27" cy="34" r="4" fill="#fff"/>
+        <circle cx="40" cy="46" r="4" fill="#fff"/>
+        <circle cx="24" cy="52" r="4" fill="#fff"/>
+        <line x1="27" y1="34" x2="40" y2="46" stroke="#fff" stroke-width="2"/>
+        <line x1="24" y1="52" x2="40" y2="46" stroke="#fff" stroke-width="2"/>
+        <path d="M62 32C69 32 74 37 74 43C74 49 69 54 62 54H60L54 60V54C48 53 44 49 44 43C44 37 50 32 58 32Z" fill="#2FB6E0"/>
+        <path d="M53 43 57 47 65 39" stroke="#0B2233" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      Media Fortix
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">হোম</a></li>
+      <li><a href="#services" class="nav-link">সার্ভিস</a></li>
+      <li><a href="#tech-news" class="nav-link">টেক নিউজ</a></li>
+      <li><a href="#about" class="nav-link">আমাদের সম্পর্কে</a></li>
+      <li><a href="#contact" class="nav-link">যোগাযোগ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="ডার্ক ও লাইট মোড পরিবর্তন করুন"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="মেনু খুলুন বা বন্ধ করুন"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">শুরু থেকেই বিশ্বস্ত</div>
+        <h1>সোশ্যাল মিডিয়া সিকিউরিটি, <span class="accent">ডিজিটাল গ্রোথ</span> ও গুরুত্বপূর্ণ টেকনোলজি নিউজ</h1>
+        <p class="lead">Media Fortix হ্যাকারদের হাত থেকে অ্যাকাউন্ট রক্ষা করে, হারানো অ্যাকাউন্ট ফিরিয়ে আনে, সঠিক কৌশলে ব্র্যান্ড বড় করে এবং আগামী দিনের প্রযুক্তি নিয়ে সংবাদ প্রকাশ করে — সবকিছু এক ছাদের নিচে।</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn btn-primary"><i class="fa-solid fa-shield-halved"></i> সার্ভিস দেখুন</a>
+          <a href="#tech-news" class="btn btn-ghost"><i class="fa-solid fa-newspaper"></i> টেক নিউজ পড়ুন</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>১৫+</strong><span>বিশেষায়িত সার্ভিস</span></div>
+          <div><strong>২৪/৭</strong><span>সিকিউরিটি মনিটরিং</span></div>
+          <div><strong>১০০০+</strong><span>অ্যাকাউন্ট রিকভার</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" fill="none">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2FB6E0"/>
+              <stop offset="1" stop-color="#294C86"/>
+            </linearGradient>
+          </defs>
+          <path d="M200 30 340 80V190C340 280 280 330 200 365 120 330 60 280 60 190V80Z" stroke="url(#g1)" stroke-width="2" opacity="0.55"/>
+          <path d="M200 70 305 108V195C305 265 258 305 200 332 142 305 95 265 95 195V108Z" stroke="url(#g1)" stroke-width="1.5" opacity="0.75"/>
+          <circle cx="160" cy="150" r="5" fill="#2FB6E0"><animate attributeName="r" values="5;8;5" dur="3s" repeatCount="indefinite"/></circle>
+          <circle cx="130" cy="200" r="4" fill="#AEB6C2"><animate attributeName="r" values="4;7;4" dur="2.4s" repeatCount="indefinite"/></circle>
+          <circle cx="190" cy="215" r="4" fill="#2FB6E0"><animate attributeName="r" values="4;7;4" dur="2.8s" repeatCount="indefinite"/></circle>
+          <line x1="160" y1="150" x2="130" y2="200" stroke="url(#g1)" stroke-width="1.4" opacity="0.6"/>
+          <line x1="160" y1="150" x2="190" y2="215" stroke="url(#g1)" stroke-width="1.4" opacity="0.6"/>
+          <line x1="130" y1="200" x2="190" y2="215" stroke="url(#g1)" stroke-width="1.4" opacity="0.6"/>
+          <path d="M245 150C265 150 280 163 280 179C280 195 265 208 245 208H240L225 222V207C207 204 195 193 195 179C195 163 220 150 245 150Z" fill="#2FB6E0" opacity="0.9"/>
+          <path d="M222 178 236 191 262 165" stroke="#04202B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">আমরা যা করি</div>
+        <h2>একটাই লক্ষ্যে তৈরি পনেরোটি সার্ভিস: আপনার ব্র্যান্ড সুরক্ষিত ও ক্রমবর্ধমান</h2>
+        <p>হ্যাক হওয়া অ্যাকাউন্ট সুরক্ষিত করা থেকে শুরু করে আগামীকালের টেক হেডলাইন প্রকাশ করা পর্যন্ত, নিচের প্রতিটি সার্ভিস একই টিম পরিচালনা করে।</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" style="background:var(--surface-2);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">কেন Media Fortix</div>
+        <h2>যেসব কারণে ক্লায়েন্টরা আমাদের সাথে থাকেন</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal"><i class="fa-solid fa-handshake-angle"></i><h4>বিশ্বস্ত সাপোর্ট</h4><p>প্রকৃত মানুষ যারা সমস্যা সমাধান না হওয়া পর্যন্ত পাশে থাকে।</p></div>
+        <div class="why-item reveal"><i class="fa-solid fa-shield-halved"></i><h4>সিকিউরিটি কেন্দ্রিক</h4><p>প্রতিটি সিদ্ধান্ত শুরু হয় আপনার অ্যাকাউন্ট ও ডেটা সুরক্ষিত রাখার চিন্তা থেকে।</p></div>
+        <div class="why-item reveal"><i class="fa-solid fa-bolt"></i><h4>দ্রুত রেসপন্স</h4><p>অ্যাকাউন্ট ক্ষতিগ্রস্ত হলে সময় গুরুত্বপূর্ণ — আমরা দ্রুত পদক্ষেপ নিই।</p></div>
+        <div class="why-item reveal"><i class="fa-solid fa-star"></i><h4>প্রফেশনাল সার্ভিস</h4><p>স্পষ্ট যোগাযোগ এবং এমন একটি প্রক্রিয়া যা আপনি সহজে অনুসরণ করতে পারেন।</p></div>
+        <div class="why-item reveal"><i class="fa-solid fa-microchip"></i><h4>টেকনোলজি এক্সপার্টিজ</h4><p>আমরা প্ল্যাটফর্ম, ঝুঁকি ও টুলস নজরে রাখি, যাতে আপনাকে সেটা করতে না হয়।</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <div class="kicker">Media Fortix সম্পর্কে</div>
+        <h2>মানুষকে অনলাইনে নিরাপদ রেখে এগিয়ে নিতে তৈরি</h2>
+        <p>Media Fortix শুরু হয়েছিল একটি সহজ পর্যবেক্ষণ থেকে: সোশ্যাল মিডিয়া অ্যাকাউন্ট এখন অনেকের জীবিকার উৎস, তবু হ্যাক, লকআউট, ইমপারসোনেটর কিংবা স্ক্যামের মতো সমস্যায় পড়লে বেশিরভাগ মানুষের নির্ভরযোগ্য কোনো জায়গা থাকে না। আমরা সেই দলটি তৈরি করেছি যা নিজেরাই সেই মুহূর্তে চেয়েছিলাম, এবং পরে তা বিস্তৃত করেছি অনলাইন উপস্থিতির প্রয়োজনীয় প্রতিটি দিকে।</p>
+        <p>আমাদের মিশন হলো ক্রিয়েটর, প্রফেশনাল এবং ব্যবসার জন্য সোশ্যাল মিডিয়াকে আরও নিরাপদ ও ফলপ্রসূ করে তোলা। আমাদের ভিশন এমন একটি ডিজিটাল জগৎ, যেখানে গ্রোথ সিকিউরিটির বিনিময়ে আসে না, এবং যেখানে প্রযুক্তি নিয়ে সঠিক তথ্য সহজে পাওয়া যায়। এই উদ্দেশ্যই আমাদের প্রতিটি সার্ভিস ও প্রকাশিত প্রতিটি খবরের পেছনে কাজ করে।</p>
+      </div>
+      <div class="about-cards reveal">
+        <div class="about-card"><h4>মিশন</h4><p>প্রতিটি ক্লায়েন্টের অ্যাকাউন্ট সুরক্ষিত রাখা, হারানো জিনিস ফিরিয়ে আনা এবং প্রকৃত ডিজিটাল গ্রোথে সহায়তা করা।</p></div>
+        <div class="about-card"><h4>ভিশন</h4><p>এমন এক ডিজিটাল জগৎ যেখানে সিকিউরিটি ও গ্রোথ একসাথে এগোয়, পরস্পরের বিপরীতে নয়।</p></div>
+        <div class="about-card"><h4>উদ্দেশ্য</h4><p>অনলাইনে কিছু ভুল হওয়ার মুহূর্তে — এবং তার অনেক আগে থেকেই — মানুষ যে দলকে বিশ্বাস করবে, আমরা সেই দল হতে চাই।</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH NEWS -->
+  <section id="tech-news" class="news-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Media Fortix রিপোর্টস</div>
+        <h2>টেকনোলজি নিউজ, অপ্রয়োজনীয় হইচই ছাড়া</h2>
+        <p>এআই, সাইবার সিকিউরিটি, প্ল্যাটফর্ম আপডেট এবং কাজের টিপস — প্রতিদিন আমাদের টিমের বাছাই করা।</p>
+      </div>
+
+      <div class="breaking-bar reveal">
+        <div class="breaking-tag"><i class="fa-solid fa-tower-broadcast"></i> ব্রেকিং</div>
+        <div class="breaking-track">
+          <ul id="breakingList"></ul>
+        </div>
+      </div>
+
+      <div class="slider reveal" id="slider">
+        <div class="slider-arrows">
+          <button id="prevSlide" aria-label="আগের স্লাইড"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="nextSlide" aria-label="পরের স্লাইড"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div id="slideTrack"></div>
+        <div class="slider-controls" id="sliderDots"></div>
+      </div>
+
+      <div class="news-toolbar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="newsSearch" placeholder="টেক নিউজ খুঁজুন...">
+        </div>
+        <div class="filters" id="filterBar"></div>
+      </div>
+
+      <div class="news-layout">
+        <div>
+          <div class="news-grid" id="newsGrid"></div>
+          <p class="no-results" id="noResults">আপনার সার্চ বা ফিল্টারের সাথে মিলে এমন কোনো আর্টিকেল নেই।</p>
+        </div>
+        <aside class="sidebar-card reveal">
+          <h4>এখন ট্রেন্ডিং</h4>
+          <div id="trendingList"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="kicker">যোগাযোগ করুন</div>
+        <h2>কী ঘটেছে আমাদের জানান — বাকিটা আমরা দেখছি</h2>
+        <p>অ্যাকাউন্ট হ্যাক হোক বা গ্রোথ স্ট্র্যাটেজি — আপনার জন্য যেভাবে সহজ, সেভাবেই আমাদের সাথে যোগাযোগ করুন।</p>
+        <div class="contact-info">
+          <div class="contact-row"><i class="fa-solid fa-envelope"></i><div><h5>ইমেইল</h5><p><a href="mailto:support@mediafortix.com">support@mediafortix.com</a></p></div></div>
+          <div class="contact-row"><i class="fa-solid fa-phone"></i><div><h5>ফোন</h5><p><a href="tel:+10000000000">+1 (000) 000-0000</a></p></div></div>
+          <div class="contact-row"><i class="fa-brands fa-whatsapp"></i><div><h5>হোয়াটসঅ্যাপ</h5><p><a href="https://wa.me/10000000000" target="_blank" rel="noopener">সরাসরি মেসেজ করুন</a></p></div></div>
+          <div class="contact-row"><i class="fa-brands fa-facebook"></i><div><h5>ফেসবুক পেজ</h5><p><a href="https://www.facebook.com/share/1GUEopKuDc/" target="_blank" rel="noopener">আমাদের পেজ দেখুন</a></p></div></div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <input type="text" placeholder="আপনার নাম" required>
+        <input type="email" placeholder="আপনার ইমেইল" required>
+        <input type="text" placeholder="বিষয়">
+        <textarea placeholder="আমরা কীভাবে সাহায্য করতে পারি?" required></textarea>
+        <button type="submit" class="btn btn-primary">মেসেজ পাঠান</button>
+        <span class="form-note" id="formNote"><i class="fa-solid fa-circle-check"></i> ধন্যবাদ — আমরা ২৪ ঘণ্টার মধ্যে উত্তর দেব।</span>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <svg viewBox="0 0 100 116" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 3 92 18V54C92 84 74 100 50 112 26 100 8 84 8 54V18Z" fill="#1D3E72"/>
+            <path d="M50 3V112C74 100 92 84 92 54V18Z" fill="#AEB6C2"/>
+            <circle cx="27" cy="34" r="4" fill="#fff"/><circle cx="40" cy="46" r="4" fill="#fff"/><circle cx="24" cy="52" r="4" fill="#fff"/>
+            <line x1="27" y1="34" x2="40" y2="46" stroke="#fff" stroke-width="2"/>
+            <line x1="24" y1="52" x2="40" y2="46" stroke="#fff" stroke-width="2"/>
+            <path d="M62 32C69 32 74 37 74 43C74 49 69 54 62 54H60L54 60V54C48 53 44 49 44 43C44 37 50 32 58 32Z" fill="#2FB6E0"/>
+          </svg>
+          Media Fortix
+        </a>
+        <p>সোশ্যাল মিডিয়া সিকিউরিটি, ডিজিটাল গ্রোথ এবং টেকনোলজি নিউজ, একই টিমের হাতে।</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1GUEopKuDc/" class="icon-btn" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="icon-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>কুইক লিংক</h5>
+        <ul>
+          <li><a href="#home">হোম</a></li>
+          <li><a href="#services">সার্ভিস</a></li>
+          <li><a href="#tech-news">টেক নিউজ</a></li>
+          <li><a href="#about">আমাদের সম্পর্কে</a></li>
+          <li><a href="#contact">যোগাযোগ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>সার্ভিস</h5>
+        <ul>
+          <li><a href="#services">অ্যাকাউন্ট সিকিউরিটি</a></li>
+          <li><a href="#services">অ্যাকাউন্ট রিকভারি</a></li>
+          <li><a href="#services">সোশ্যাল মিডিয়া ম্যানেজমেন্ট</a></li>
+          <li><a href="#services">কন্টেন্ট ক্রিয়েশন</a></li>
+          <li><a href="#services">কনসালটেশন</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>টেক নিউজ</h5>
+        <ul>
+          <li><a href="#tech-news" data-cat="এআই নিউজ">এআই নিউজ</a></li>
+          <li><a href="#tech-news" data-cat="সাইবার সিকিউরিটি">সাইবার সিকিউরিটি</a></li>
+          <li><a href="#tech-news" data-cat="সোশ্যাল মিডিয়া আপডেট">সোশ্যাল মিডিয়া আপডেট</a></li>
+          <li><a href="#tech-news" data-cat="গ্যাজেট রিভিউ">গ্যাজেট রিভিউ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Media Fortix। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span style="display:flex;gap:18px;">
+        <a href="#" id="openPrivacy">প্রাইভেসি পলিসি</a>
+        <a href="#" id="openTerms">শর্তাবলী</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="উপরে যান"><i class="fa-solid fa-arrow-up"></i></button>
+<a class="whatsapp-float" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপে চ্যাট করুন"><i class="fa-brands fa-whatsapp"></i></a>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark"></i></button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* ============ DATA ============ */
+const services = [
+  {icon:"fa-user-shield",title:"সোশ্যাল মিডিয়া সিকিউরিটি ও প্রোটেকশন",desc:"হ্যাকিং, ফিশিং, অনুমোদনহীন প্রবেশ এবং নিরাপত্তা ঝুঁকি থেকে আপনার সোশ্যাল মিডিয়া অ্যাকাউন্ট সুরক্ষিত রাখা।",more:"আমরা লগইন কার্যক্রম যাচাই করি, নিরাপত্তা ফাঁকফোকর বন্ধ করি, শক্তিশালী অথেন্টিকেশন চালু করি এবং সন্দেহজনক অ্যাক্সেস নজরে রাখি, যাতে আপনার অ্যাকাউন্ট আপনার হাতেই থাকে।"},
+  {icon:"fa-key",title:"অ্যাকাউন্ট রিকভারি সাপোর্ট",desc:"হ্যাক হওয়া, লক হওয়া, ডিজেবল হওয়া বা ক্ষতিগ্রস্ত সোশ্যাল মিডিয়া অ্যাকাউন্ট ফিরিয়ে আনতে দিকনির্দেশনা ও সহায়তা।",more:"প্ল্যাটফর্মের রিকভারি প্রক্রিয়া জুড়ে ধাপে ধাপে সহায়তা, ডকুমেন্টেশনে সাহায্য এবং অ্যাক্সেস ফিরে না পাওয়া পর্যন্ত ফলোআপ।"},
+  {icon:"fa-user-secret",title:"ইমপারসোনেশন ও ফেক অ্যাকাউন্ট রিপোর্টিং",desc:"ভুয়া, পরিচয় নকল, হয়রানিমূলক এবং পরিচয়ের অপব্যবহারকারী অ্যাকাউন্ট রিপোর্ট করতে সহায়তা।",more:"আমরা প্রমাণ সংগ্রহ করে সঠিকভাবে রিপোর্ট দাখিল করতে সাহায্য করি, যাতে নকল বা হয়রানিমূলক অ্যাকাউন্ট দ্রুত অপসারণ হয়।"},
+  {icon:"fa-circle-check",title:"ব্লু ভেরিফিকেশন সহায়তা",desc:"ফেসবুক পেজ ও প্রফেশনাল অ্যাকাউন্ট ভেরিফিকেশন আবেদনে দিকনির্দেশনা ও সহায়তা।",more:"আমরা যোগ্যতা যাচাই করি, প্রয়োজনীয় ডকুমেন্ট প্রস্তুত করি এবং ভেরিফিকেশন আবেদনের প্রতিটি ধাপে গাইড করি।"},
+  {icon:"fa-gauge-high",title:"সোশ্যাল মিডিয়া ম্যানেজমেন্ট",desc:"ফেসবুক, ইনস্টাগ্রাম, টিকটক এবং অন্যান্য সোশ্যাল মিডিয়া প্ল্যাটফর্মের সম্পূর্ণ ম্যানেজমেন্ট।",more:"পোস্ট শিডিউলিং, কমিউনিটি রিপ্লাই, পেজ হাইজিন এবং প্রতিদিনের রক্ষণাবেক্ষণ, যাতে আপনার উপস্থিতি সক্রিয় ও ধারাবাহিক থাকে।"},
+  {icon:"fa-pen-nib",title:"কন্টেন্ট ক্রিয়েশন ও ক্রিয়েটিভ ডিজাইন",desc:"প্রফেশনাল সোশ্যাল মিডিয়া পোস্ট, গ্রাফিক্স, রিলস, ভিডিও, থাম্বনেইল এবং ব্র্যান্ডিং উপকরণ।",more:"একটি ডিজাইন ও এডিটিং টিম যারা ব্র্যান্ড অনুযায়ী পোস্ট, শর্ট-ফর্ম ভিডিও এবং প্রকাশযোগ্য থাম্বনেইল তৈরি করে।"},
+  {icon:"fa-chart-line",title:"ডিজিটাল গ্রোথ সলিউশন",desc:"অডিয়েন্স রিচ, এনগেজমেন্ট এবং অনলাইন ভিজিবিলিটি বাড়ানোর কৌশল।",more:"পোস্টিং সময়সূচি, কন্টেন্ট মিশ্রণ এবং অডিয়েন্স টার্গেটিং সহ ডেটা-ভিত্তিক গ্রোথ পরিকল্পনা।"},
+  {icon:"fa-bullhorn",title:"সোশ্যাল মিডিয়া মার্কেটিং",desc:"ব্যবসা, ক্রিয়েটর এবং প্রতিষ্ঠানের জন্য মার্কেটিং ও প্রমোশনাল সলিউশন।",more:"আপনার লক্ষ্য, বাজেট এবং পছন্দের প্ল্যাটফর্ম অনুযায়ী ক্যাম্পেইন পরিকল্পনা ও প্রমোশন।"},
+  {icon:"fa-comments",title:"অডিয়েন্স এনগেজমেন্ট সার্ভিস",desc:"অডিয়েন্সের ইন্টারঅ্যাকশন ও কন্টেন্টের পারফরম্যান্স উন্নত করার সমাধান।",more:"কমিউনিটি ম্যানেজমেন্ট কৌশল এবং কন্টেন্ট সমন্বয় যা দর্শকদের সক্রিয় অডিয়েন্সে পরিণত করে।"},
+  {icon:"fa-triangle-exclamation",title:"স্ক্যাম শনাক্তকরণ ও সচেতনতা",desc:"স্ক্যাম, ফিশিং প্রচেষ্টা, প্রতারণা এবং সন্দেহজনক অনলাইন কার্যক্রম শনাক্তকরণ।",more:"ক্ষতি হওয়ার আগেই প্রতারণামূলক বার্তা, ভুয়া লিংক এবং ইমপারসোনেশন স্ক্যাম চিহ্নিত করতে আমরা সাহায্য করি।"},
+  {icon:"fa-newspaper",title:"টেকনোলজি নিউজ ও আপডেট",desc:"সর্বশেষ প্রযুক্তি, এআই, সাইবার সিকিউরিটি এবং ডিজিটাল ইন্ডাস্ট্রির খবর প্রকাশ।",more:"ক্রিয়েটর ও ব্যবসাকে প্রভাবিত করা প্ল্যাটফর্ম পরিবর্তন, টুলস ও ঝুঁকির নিয়মিত কভারেজ।"},
+  {icon:"fa-robot",title:"এআই ও ডিজিটাল ইনোভেশন",desc:"এআই টুলস, অটোমেশন এবং উদীয়মান প্রযুক্তির কভারেজ।",more:"নতুন এআই টুলসের ব্যবহারিক বিশ্লেষণ এবং ক্রিয়েটর ও ব্যবসা কীভাবে তা কাজে লাগাতে পারে।"},
+  {icon:"fa-lock",title:"সাইবার সিকিউরিটি সচেতনতা",desc:"অনলাইন নিরাপত্তা, প্রাইভেসি এবং সাইবার সিকিউরিটির সেরা অনুশীলন নিয়ে শিক্ষামূলক কন্টেন্ট।",more:"পাসওয়ার্ড, ফিশিং, প্রাইভেসি সেটিংস এবং নিরাপদ ব্রাউজিং অভ্যাস নিয়ে সহজ ভাষায় গাইড।"},
+  {icon:"fa-id-badge",title:"পার্সোনাল ও বিজনেস ব্র্যান্ডিং",desc:"শক্তিশালী পার্সোনাল ব্র্যান্ড ও প্রফেশনাল বিজনেস পরিচয় তৈরি।",more:"পজিশনিং, ভিজ্যুয়াল আইডেন্টিটি এবং মেসেজিং যা আপনাকে সহজেই চেনার মতো করে তোলে।"},
+  {icon:"fa-comments-dollar",title:"সোশ্যাল মিডিয়া কনসালটেশন",desc:"সোশ্যাল মিডিয়া গ্রোথ, ব্র্যান্ডিং, সিকিউরিটি এবং কৌশল নিয়ে প্রফেশনাল কনসালটেশন।",more:"সমস্যা চিহ্নিত করতে এবং আপনার অ্যাকাউন্টের জন্য স্পষ্ট অ্যাকশন প্ল্যান তৈরি করতে একান্ত সেশন।"}
+];
+
+const categories = ["এআই নিউজ","সাইবার সিকিউরিটি","সোশ্যাল মিডিয়া আপডেট","টেকনোলজি আপডেট","গ্যাজেট রিভিউ","ডিজিটাল মার্কেটিং","অনলাইন সেফটি","টেক টিপস ও ট্রিকস"];
+const catClass = {"এআই নিউজ":"tc-ai","সাইবার সিকিউরিটি":"tc-cyber","সোশ্যাল মিডিয়া আপডেট":"tc-social","টেকনোলজি আপডেট":"tc-tech","গ্যাজেট রিভিউ":"tc-gadget","ডিজিটাল মার্কেটিং":"tc-marketing","অনলাইন সেফটি":"tc-safety","টেক টিপস ও ট্রিকস":"tc-tips"};
+const catIcon = {"এআই নিউজ":"fa-robot","সাইবার সিকিউরিটি":"fa-shield-halved","সোশ্যাল মিডিয়া আপডেট":"fa-hashtag","টেকনোলজি আপডেট":"fa-microchip","গ্যাজেট রিভিউ":"fa-mobile-screen","ডিজিটাল মার্কেটিং":"fa-bullhorn","অনলাইন সেফটি":"fa-user-shield","টেক টিপস ও ট্রিকস":"fa-lightbulb"};
+
+const articles = [
+  {cat:"এআই নিউজ",title:"জেনারেটিভ এআই এখন নতুনত্ব নয়, দৈনন্দিন কাজের হাতিয়ার",summary:"অনেক টিম এখন এআই ড্রাফটিং ও রিসার্চ অ্যাসিস্ট্যান্টকে পরীক্ষা হিসেবে না দেখে সরাসরি দৈনন্দিন কাজে যুক্ত করছে।",date:"৮ সেপ্টেম্বর, ২০২৬"},
+  {cat:"সাইবার সিকিউরিটি",title:"ফিশিং কিট এখন সেকেন্ডেই প্ল্যাটফর্মের লগইন পেজ নকল করছে",summary:"নতুন টুলকিট আক্রমণকারীদের তাৎক্ষণিকভাবে লগইন স্ক্রিন কপি করতে দেয়, ফলে আসল ও নকল পেজ চেনা কঠিন হয়ে যাচ্ছে।",date:"৭ সেপ্টেম্বর, ২০২৬"},
+  {cat:"সোশ্যাল মিডিয়া আপডেট",title:"বড় প্ল্যাটফর্মগুলো ইমপারসোনেশন অ্যাকাউন্টের বিরুদ্ধে নিয়ম কঠোর করছে",summary:"ভুয়া ও নকল প্রোফাইল নিয়ে ক্রমাগত চাপের পর দ্রুত অপসারণ প্রক্রিয়া চালু হচ্ছে।",date:"৬ সেপ্টেম্বর, ২০২৬"},
+  {cat:"টেকনোলজি আপডেট",title:"এজ কম্পিউটিং নিঃশব্দে হয়ে উঠছে নতুন মানদণ্ড",summary:"গতি ও প্রাইভেসির জন্য অনেক অ্যাপ এখন সম্পূর্ণ ক্লাউড-নির্ভরতা ছেড়ে ব্যবহারকারীর কাছাকাছি ডেটা প্রসেস করছে।",date:"৫ সেপ্টেম্বর, ২০২৬"},
+  {cat:"গ্যাজেট রিভিউ",title:"এবছরের ফ্ল্যাগশিপ ফোনগুলো ঝুঁকছে অন-ডিভাইস এআইয়ের দিকে",summary:"ক্যামেরা ও ব্যাটারি উন্নতির চেয়ে এখন গুরুত্ব পাচ্ছে ইন্টারনেট ছাড়াই কাজ করা অন-ডিভাইস অ্যাসিস্ট্যান্ট।",date:"৪ সেপ্টেম্বর, ২০২৬"},
+  {cat:"ডিজিটাল মার্কেটিং",title:"শর্ট-ফর্ম ভিডিও এখনো সব ফরম্যাটকে ছাড়িয়ে যাচ্ছে",summary:"নতুন এনগেজমেন্ট ডেটা নিশ্চিত করছে, প্রায় সব প্ল্যাটফর্ম ও অডিয়েন্সের মধ্যে শর্ট ভিডিও এখনো সবচেয়ে বেশি নজর কাড়ছে।",date:"৩ সেপ্টেম্বর, ২০২৬"},
+  {cat:"অনলাইন সেফটি",title:"একটি সহজ চেকলিস্ট যা বেশিরভাগ অ্যাকাউন্ট টেকওভার ঠেকায়",summary:"সিকিউরিটি গবেষকরা এমন কিছু অভ্যাসের কথা বলছেন যা বেশিরভাগ সাধারণ অ্যাকাউন্ট হ্যাক প্রতিরোধ করে।",date:"২ সেপ্টেম্বর, ২০২৬"},
+  {cat:"টেক টিপস ও ট্রিকস",title:"আজই প্রতিটি সোশ্যাল অ্যাকাউন্টে যাচাই করা উচিত এমন পাঁচটি সেটিং",summary:"লগইন অ্যালার্ট ও অ্যাপ পারমিশনে সামান্য পরিবর্তন আক্রমণকারীদের নির্ভর করা বেশিরভাগ ফাঁকফোকর বন্ধ করে দিতে পারে।",date:"১ সেপ্টেম্বর, ২০২৬"},
+  {cat:"এআই নিউজ",title:"ছোট, বিশেষায়িত এআই মডেলের এখন জয়জয়কার",summary:"সবকিছুর জন্য একটি বিশাল মডেলের বদলে, এখন অনেক প্রোডাক্ট নির্দিষ্ট কাজের জন্য তৈরি একাধিক ছোট মডেল ব্যবহার করছে।",date:"৩০ আগস্ট, ২০২৬"},
+  {cat:"সাইবার সিকিউরিটি",title:"টু-ফ্যাক্টর ফেটিগ অ্যাটাক বেড়েই চলেছে",summary:"আক্রমণকারীরা একটি ভুল অনুমোদনের আশায় বারবার ভেরিফিকেশন প্রম্পট পাঠাচ্ছে — জেনে নিন কীভাবে তা চিনবেন।",date:"২৮ আগস্ট, ২০২৬"},
+  {cat:"সোশ্যাল মিডিয়া আপডেট",title:"ভেরিফিকেশন ব্যাজের জন্য নতুন যোগ্যতার নিয়ম চালু হলো",summary:"আবেদনকারীদের এখন কিছুটা ভিন্ন মানদণ্ড পূরণ করতে হবে, যা আগে বাতিল হওয়া পেজগুলোকেও প্রভাবিত করছে।",date:"২৬ আগস্ট, ২০২৬"},
+  {cat:"টেকনোলজি আপডেট",title:"ব্রাউজারগুলো নিঃশব্দে হয়ে উঠছে এআই অ্যাসিস্ট্যান্ট",summary:"সাধারণ ব্রাউজারের ভেতরেই বিল্ট-ইন অ্যাসিস্ট্যান্ট এখন পেজ সামারি করা ও ফর্ম পূরণ করা শুরু করেছে।",date:"২৪ আগস্ট, ২০২৬"}
+];
+
+const featured = articles.slice(0,4);
+
+/* ============ SERVICES RENDER ============ */
+const servicesGrid = document.getElementById('servicesGrid');
+services.forEach((s,i)=>{
+  const card = document.createElement('div');
+  card.className = 'service-card reveal';
+  card.innerHTML = `
+    <div class="service-icon"><i class="fa-solid ${s.icon}"></i></div>
+    <h3>${s.title}</h3>
+    <p>${s.desc}</p>
+    <button class="learn-more" data-i="${i}">আরও জানুন <i class="fa-solid fa-arrow-left-long"></i></button>
+  `;
+  servicesGrid.appendChild(card);
+});
+servicesGrid.addEventListener('click', e=>{
+  const btn = e.target.closest('.learn-more');
+  if(!btn) return;
+  const s = services[btn.dataset.i];
+  openModal(`
+    <div class="modal-icon"><i class="fa-solid ${s.icon}"></i></div>
+    <h3>${s.title}</h3>
+    <p>${s.desc}</p>
+    <p>${s.more}</p>
+    <a href="#contact" class="btn btn-primary" style="margin-top:10px;">এই সার্ভিসটি চান</a>
+  `);
+});
+
+/* ============ MODAL ============ */
+const modalOverlay = document.getElementById('modalOverlay');
+const modalBody = document.getElementById('modalBody');
+function openModal(html){ modalBody.innerHTML = html; modalOverlay.classList.add('open'); }
+function closeModal(){ modalOverlay.classList.remove('open'); }
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', e=>{ if(e.target===modalOverlay) closeModal(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+document.getElementById('openPrivacy').addEventListener('click', e=>{
+  e.preventDefault();
+  openModal(`<h3>প্রাইভেসি পলিসি</h3><p>Media Fortix শুধুমাত্র সার্ভিস দিতে প্রয়োজনীয় তথ্য সংগ্রহ করে এবং কখনো ব্যক্তিগত তথ্য তৃতীয় পক্ষের কাছে বিক্রি করে না। আপনার দেওয়া যোগাযোগের তথ্য শুধুমাত্র আপনার অনুরোধের জবাব দিতে ব্যবহৃত হয়।</p><p>সম্পূর্ণ পলিসির বিস্তারিত আমাদের কন্টাক্ট পেজের মাধ্যমে অনুরোধ করে জানা যাবে।</p>`);
+});
+document.getElementById('openTerms').addEventListener('click', e=>{
+  e.preventDefault();
+  openModal(`<h3>শর্তাবলী</h3><p>Media Fortix-এর সার্ভিস ব্যবহার করে আপনি সঠিক তথ্য প্রদান এবং আমাদের নির্দেশনা দায়িত্বশীলভাবে ব্যবহার করতে সম্মত হচ্ছেন। অ্যাকাউন্ট রিকভারি ও ভেরিফিকেশন সহায়তা সংশ্লিষ্ট প্ল্যাটফর্মের নিজস্ব নীতিমালা ও চূড়ান্ত সিদ্ধান্তের উপর নির্ভরশীল।</p><p>সম্পূর্ণ শর্তাবলী আমাদের কন্টাক্ট পেজের মাধ্যমে অনুরোধ করে জানা যাবে।</p>`);
+});
+
+/* ============ BREAKING NEWS ============ */
+const breakingList = document.getElementById('breakingList');
+const breakingItems = articles.slice(0,6).map(a=>`<li>${a.title}</li>`).join('');
+breakingList.innerHTML = breakingItems + breakingItems;
+
+/* ============ FEATURED SLIDER ============ */
+const slideTrack = document.getElementById('slideTrack');
+const sliderDots = document.getElementById('sliderDots');
+featured.forEach((a,i)=>{
+  const slide = document.createElement('div');
+  slide.className = 'slide' + (i===0?' active':'');
+  slide.innerHTML = `
+    <div class="slide-media ${catClass[a.cat]}"><i class="fa-solid ${catIcon[a.cat]}"></i></div>
+    <div class="slide-copy">
+      <span class="tag">${a.cat}</span>
+      <h3>${a.title}</h3>
+      <p>${a.summary}</p>
+      <div><button class="btn btn-sm btn-primary read-article" data-i="${i}" data-src="featured">আরও পড়ুন</button></div>
+      <span class="slide-date">${a.date}</span>
+    </div>`;
+  slideTrack.appendChild(slide);
+  const dot = document.createElement('button');
+  dot.className = 'slider-dot' + (i===0?' active':'');
+  dot.addEventListener('click', ()=> goToSlide(i));
+  sliderDots.appendChild(dot);
+});
+let currentSlide = 0;
+const slides = ()=>document.querySelectorAll('.slide');
+const dots = ()=>document.querySelectorAll('.slider-dot');
+function goToSlide(i){
+  slides().forEach(s=>s.classList.remove('active'));
+  dots().forEach(d=>d.classList.remove('active'));
+  currentSlide = (i+featured.length)%featured.length;
+  slides()[currentSlide].classList.add('active');
+  dots()[currentSlide].classList.add('active');
+}
+document.getElementById('nextSlide').addEventListener('click', ()=>goToSlide(currentSlide+1));
+document.getElementById('prevSlide').addEventListener('click', ()=>goToSlide(currentSlide-1));
+let sliderTimer = setInterval(()=>goToSlide(currentSlide+1), 6000);
+document.getElementById('slider').addEventListener('mouseenter', ()=>clearInterval(sliderTimer));
+document.getElementById('slider').addEventListener('mouseleave', ()=>{ sliderTimer = setInterval(()=>goToSlide(currentSlide+1), 6000); });
+
+/* ============ FILTERS + SEARCH ============ */
+const filterBar = document.getElementById('filterBar');
+let activeCat = 'সব';
+const allBtn = document.createElement('button');
+allBtn.className = 'filter-btn active';
+allBtn.textContent = 'সব';
+allBtn.addEventListener('click', ()=>setFilter('সব', allBtn));
+filterBar.appendChild(allBtn);
+categories.forEach(c=>{
+  const b = document.createElement('button');
+  b.className = 'filter-btn';
+  b.textContent = c;
+  b.addEventListener('click', ()=>setFilter(c,b));
+  filterBar.appendChild(b);
+});
+function setFilter(cat, btn){
+  activeCat = cat;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderNews();
+}
+document.querySelectorAll('[data-cat]').forEach(link=>{
+  link.addEventListener('click', e=>{
+    const cat = link.dataset.cat;
+    const target = [...document.querySelectorAll('.filter-btn')].find(b=>b.textContent===cat);
+    if(target) setFilter(cat, target);
+  });
+});
+
+/* ============ NEWS GRID ============ */
+const newsGrid = document.getElementById('newsGrid');
+const noResults = document.getElementById('noResults');
+const searchInput = document.getElementById('newsSearch');
+
+function renderNews(){
+  const q = searchInput.value.trim().toLowerCase();
+  const filtered = articles.filter(a=>{
+    const matchCat = activeCat==='সব' || a.cat===activeCat;
+    const matchQ = !q || a.title.toLowerCase().includes(q) || a.summary.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+  newsGrid.innerHTML = '';
+  filtered.forEach((a)=>{
+    const realIndex = articles.indexOf(a);
+    const card = document.createElement('div');
+    card.className = 'news-card';
+    card.innerHTML = `
+      <div class="news-thumb ${catClass[a.cat]}"><span class="tag">${a.cat}</span><i class="fa-solid ${catIcon[a.cat]}"></i></div>
+      <div class="news-body">
+        <h4>${a.title}</h4>
+        <p>${a.summary}</p>
+        <div class="news-meta">
+          <span>${a.date}</span>
+          <button class="read-more read-article" data-i="${realIndex}" data-src="grid">আরও পড়ুন</button>
+        </div>
+      </div>`;
+    newsGrid.appendChild(card);
+  });
+  noResults.style.display = filtered.length ? 'none':'block';
+}
+searchInput.addEventListener('input', renderNews);
+renderNews();
+
+document.addEventListener('click', e=>{
+  const btn = e.target.closest('.read-article');
+  if(!btn) return;
+  const list = btn.dataset.src === 'featured' ? featured : articles;
+  const a = list[btn.dataset.i];
+  openModal(`
+    <span class="tag">${a.cat}</span>
+    <h3>${a.title}</h3>
+    <p style="color:var(--text-dim);font-size:0.82rem;">${a.date}</p>
+    <p>${a.summary}</p>
+    <p>এই বিষয়টি নিয়ে Media Fortix নিয়মিত আপডেট দিতে থাকবে, সহজ ভাষায় জানাবে সাধারণ ব্যবহারকারী ও ব্যবসার জন্য এর অর্থ কী।</p>
+  `);
+});
+
+/* ============ TRENDING SIDEBAR ============ */
+const trendingList = document.getElementById('trendingList');
+articles.slice(0,5).forEach((a,i)=>{
+  const item = document.createElement('div');
+  item.className = 'trend-item';
+  item.innerHTML = `<span class="trend-rank">${i+1}</span><div><h5>${a.title}</h5><span>${a.cat} • ${a.date}</span></div>`;
+  trendingList.appendChild(item);
+});
+
+/* ============ CONTACT FORM ============ */
+document.getElementById('contactForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  document.getElementById('formNote').style.display = 'inline-flex';
+  e.target.reset();
+});
+
+/* ============ THEME TOGGLE ============ */
+const root = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+function applyTheme(t){
+  root.setAttribute('data-theme', t);
+  themeToggle.innerHTML = t==='light' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  localStorage.setItem('mf-theme', t);
+}
+const savedTheme = localStorage.getItem('mf-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light':'dark');
+applyTheme(savedTheme);
+themeToggle.addEventListener('click', ()=> applyTheme(root.getAttribute('data-theme')==='light' ? 'dark':'light'));
+
+/* ============ NAV: mobile + active link + scroll-top ============ */
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', ()=>{
+  hamburger.classList.toggle('open');
+  navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+  hamburger.classList.remove('open'); navLinks.classList.remove('open');
+}));
+
+const scrollTopBtn = document.getElementById('scrollTop');
+window.addEventListener('scroll', ()=>{
+  scrollTopBtn.classList.toggle('show', window.scrollY > 500);
+});
+scrollTopBtn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+const sections = document.querySelectorAll('main section[id]');
+const navA = document.querySelectorAll('.nav-link');
+const spy = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      navA.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+entry.target.id));
+    }
+  });
+}, {rootMargin:'-45% 0px -45% 0px'});
+sections.forEach(s=>spy.observe(s));
+
+/* reveal on scroll */
+const revealObs = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('in'); revealObs.unobserve(entry.target); } });
+},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+  </html>
