@@ -351,7 +351,8 @@ form.contact-form{display:grid;gap:14px;}
   color:var(--text);font-family:inherit;font-size:0.92rem;resize:vertical;
 }
 .contact-form textarea{min-height:120px;}
-.form-note{font-size:0.82rem;color:var(--accent);display:none;margin-top:4px;}
+.form-note{font-size:0.82rem;color:var(--accent);display:none;margin-top:4px;align-items:center;gap:6px;}
+.btn[disabled]{opacity:0.6;pointer-events:none;}
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;}}
 
 /* ---------- FOOTER ---------- */
@@ -581,19 +582,23 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:70px
         <h2>কী ঘটেছে আমাদের জানান — বাকিটা আমরা দেখছি</h2>
         <p>অ্যাকাউন্ট হ্যাক হোক বা গ্রোথ স্ট্র্যাটেজি — আপনার জন্য যেভাবে সহজ, সেভাবেই আমাদের সাথে যোগাযোগ করুন।</p>
         <div class="contact-info">
-          <div class="contact-row"><i class="fa-solid fa-envelope"></i><div><h5>ইমেইল</h5><p><a href="mailto:mediafortix99@gmail.com">support@mediafortix.com</a></p></div></div>
-          <div class="contact-row"><i class="fa-solid fa-phone"></i><div><h5>ফোন</h5><p><a href="tel:+8801738392781">+8801738392781</a></p></div></div>
-          <div class="contact-row"><i class="fa-brands fa-whatsapp"></i><div><h5>হোয়াটসঅ্যাপ</h5><p><a href="https://wa.me/+8801738392781" target="_blank" rel="noopener">সরাসরি মেসেজ করুন</a></p></div></div>
+          <div class="contact-row"><i class="fa-solid fa-envelope"></i><div><h5>ইমেইল</h5><p><a href="mailto:mediafortix99@gmail.com">mediafortix99@gmail.com</a></p></div></div>
+          <div class="contact-row"><i class="fa-solid fa-phone"></i><div><h5>ফোন</h5><p><a href="tel:+8801738392781">01738392781</a></p></div></div>
+          <div class="contact-row"><i class="fa-brands fa-whatsapp"></i><div><h5>হোয়াটসঅ্যাপ</h5><p><a href="https://wa.me/8801738392781" target="_blank" rel="noopener">সরাসরি মেসেজ করুন</a></p></div></div>
           <div class="contact-row"><i class="fa-brands fa-facebook"></i><div><h5>ফেসবুক পেজ</h5><p><a href="https://www.facebook.com/share/1GUEopKuDc/" target="_blank" rel="noopener">আমাদের পেজ দেখুন</a></p></div></div>
         </div>
       </div>
       <form class="contact-form reveal" id="contactForm">
-        <input type="text" placeholder="আপনার নাম" required>
-        <input type="email" placeholder="আপনার ইমেইল" required>
-        <input type="text" placeholder="বিষয়">
-        <textarea placeholder="আমরা কীভাবে সাহায্য করতে পারি?" required></textarea>
-        <button type="submit" class="btn btn-primary">মেসেজ পাঠান</button>
+        <!-- এখানে আপনার নিজের Web3Forms Access Key বসান (web3forms.com থেকে ফ্রিতে নেওয়া) -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="Media Fortix ওয়েবসাইট থেকে নতুন মেসেজ">
+        <input type="text" name="name" placeholder="আপনার নাম" required>
+        <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+        <input type="text" name="topic" placeholder="বিষয়">
+        <textarea name="message" placeholder="আমরা কীভাবে সাহায্য করতে পারি?" required></textarea>
+        <button type="submit" class="btn btn-primary" id="submitBtn">মেসেজ পাঠান</button>
         <span class="form-note" id="formNote"><i class="fa-solid fa-circle-check"></i> ধন্যবাদ — আমরা ২৪ ঘণ্টার মধ্যে উত্তর দেব।</span>
+        <span class="form-note" id="formError" style="color:var(--warn);"><i class="fa-solid fa-triangle-exclamation"></i> মেসেজ পাঠাতে সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা সরাসরি ইমেইল করুন।</span>
       </form>
     </div>
   </section>
@@ -663,7 +668,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:70px
 </footer>
 
 <button class="scroll-top" id="scrollTop" aria-label="উপরে যান"><i class="fa-solid fa-arrow-up"></i></button>
-<a class="whatsapp-float" href="https://wa.me/+8801738392781" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপে চ্যাট করুন"><i class="fa-brands fa-whatsapp"></i></a>
+<a class="whatsapp-float" href="https://wa.me/8801738392781" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপে চ্যাট করুন"><i class="fa-brands fa-whatsapp"></i></a>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay">
@@ -887,10 +892,41 @@ articles.slice(0,5).forEach((a,i)=>{
 });
 
 /* ============ CONTACT FORM ============ */
-document.getElementById('contactForm').addEventListener('submit', e=>{
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const formNote = document.getElementById('formNote');
+const formError = document.getElementById('formError');
+contactForm.addEventListener('submit', async (e)=>{
   e.preventDefault();
-  document.getElementById('formNote').style.display = 'inline-flex';
-  e.target.reset();
+  formNote.style.display = 'none';
+  formError.style.display = 'none';
+  const key = contactForm.access_key.value.trim();
+  if(!key || key === 'fe8b98a2-8207-4690-aa1b-e654395d2ade'){
+    formError.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> ফর্মটি এখনো চালু করা হয়নি — access_key বসানো হয়নি।';
+    formError.style.display = 'inline-flex';
+    return;
+  }
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'পাঠানো হচ্ছে...';
+  try{
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+    });
+    const data = await res.json();
+    if(data.success){
+      formNote.style.display = 'inline-flex';
+      contactForm.reset();
+    } else {
+      formError.style.display = 'inline-flex';
+    }
+  } catch(err){
+    formError.style.display = 'inline-flex';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'মেসেজ পাঠান';
+  }
 });
 
 /* ============ THEME TOGGLE ============ */
@@ -942,4 +978,4 @@ document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
-  </html>
+          </html>
