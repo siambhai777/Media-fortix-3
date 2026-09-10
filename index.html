@@ -909,7 +909,7 @@ contactForm.addEventListener('submit', async (e)=>{
   submitBtn.disabled = true;
   submitBtn.textContent = 'পাঠানো হচ্ছে...';
   try{
-    const res = await fetch('https://api.web3forms.com/submit', {
+    const res = await fetch('https://api.web3forms.com/v1/submissions/sub_fe8b98a2-8207-4690-aa1b-e654395d2ade', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
